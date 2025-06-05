@@ -1,9 +1,2382 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
+  "posts": [{
+	"label_name": "是否生活服务用户",
+	"label_code": "is_life_user",
+	"label_id": 2779,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "用户id",
+	"label_code": "user_id",
+	"label_id": 2784,
+	"enum_values": []
+}, {
+	"label_name": "是否职人",
+	"label_code": "is_zhiren",
+	"label_id": 3400,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "是否商家号",
+	"label_code": "is_merchant",
+	"label_id": 3409,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "设备价格",
+	"label_code": "phone_launch_price",
+	"label_id": 2772,
+	"enum_values": [{
+		"enum_name": "2000~2999",
+		"enum_id": "2000~2999"
+	}, {
+		"enum_name": "5000~5999",
+		"enum_id": "5000~5999"
+	}, {
+		"enum_name": "8000~8999",
+		"enum_id": "8000~8999"
+	}, {
+		"enum_name": "10000及以上",
+		"enum_id": "10000及以上"
+	}, {
+		"enum_name": "6000~6999",
+		"enum_id": "6000~6999"
+	}, {
+		"enum_name": "3000~3999",
+		"enum_id": "3000~3999"
+	}, {
+		"enum_name": "1000~1999",
+		"enum_id": "1000~1999"
+	}, {
+		"enum_name": "9000~9999",
+		"enum_id": "9000~9999"
+	}, {
+		"enum_name": "未知",
+		"enum_id": "未知"
+	}, {
+		"enum_name": "0~999",
+		"enum_id": "0~999"
+	}, {
+		"enum_name": "4000~4999",
+		"enum_id": "4000~4999"
+	}, {
+		"enum_name": "7000~7999",
+		"enum_id": "7000~7999"
+	}]
+}, {
+	"label_name": "性别（模型预测）",
+	"label_code": "gender",
+	"label_id": 3353,
+	"enum_values": [{
+		"enum_name": "女",
+		"enum_id": "0"
+	}, {
+		"enum_name": "男",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "年龄段（模型预测）",
+	"label_code": "age",
+	"label_id": 3356,
+	"enum_values": [{
+		"enum_name": "18岁以下",
+		"enum_id": "-18"
+	}, {
+		"enum_name": "18~23岁",
+		"enum_id": "18-23"
+	}, {
+		"enum_name": "24~30岁",
+		"enum_id": "24-30"
+	}, {
+		"enum_name": "31~40岁",
+		"enum_id": "31-40"
+	}, {
+		"enum_name": "41~50岁",
+		"enum_id": "41-50"
+	}, {
+		"enum_name": "50岁以上",
+		"enum_id": "50-"
+	}]
+}, {
+	"label_name": "人生阶段（模型预测）",
+	"label_code": "life_stage",
+	"label_id": 3355,
+	"enum_values": [{
+		"enum_name": "单身",
+		"enum_id": "single"
+	}, {
+		"enum_name": "已婚",
+		"enum_id": "engagement"
+	}, {
+		"enum_name": "为人父母",
+		"enum_id": "parent"
+	}, {
+		"enum_name": "无孩",
+		"enum_id": "childless"
+	}]
+}, {
+	"label_name": "孩子的年龄段v3（规则匹配）",
+	"label_code": "child_stage_v3",
+	"label_id": 3548,
+	"enum_values": [{
+		"enum_name": "0到2岁",
+		"enum_id": "1"
+	}, {
+		"enum_name": "3到5岁",
+		"enum_id": "2"
+	}, {
+		"enum_name": "6到11岁",
+		"enum_id": "3"
+	}, {
+		"enum_name": "12到14岁",
+		"enum_id": "4"
+	}, {
+		"enum_name": "15到17岁",
+		"enum_id": "5"
+	}]
+}, {
+	"label_name": "常驻城市",
+	"label_code": "city_resident",
+	"label_id": 2773,
+	"enum_values": []
+}, {
+	"label_name": "常驻城市等级",
+	"label_code": "city_level_resident",
+	"label_id": 2780,
+	"enum_values": [{
+		"enum_name": "一线",
+		"enum_id": "一线"
+	}, {
+		"enum_name": "二线",
+		"enum_id": "二线"
+	}, {
+		"enum_name": "六线及以下",
+		"enum_id": "六线及以下"
+	}, {
+		"enum_name": "特区",
+		"enum_id": "特区"
+	}, {
+		"enum_name": "五线",
+		"enum_id": "五线"
+	}, {
+		"enum_name": "新一线",
+		"enum_id": "新一线"
+	}, {
+		"enum_name": "四线",
+		"enum_id": "四线"
+	}, {
+		"enum_name": "三线",
+		"enum_id": "三线"
+	}]
+}, {
+	"label_name": "常驻省份",
+	"label_code": "province_resident",
+	"label_id": 2785,
+	"enum_values": [{
+		"enum_name": "河南",
+		"enum_id": "河南"
+	}, {
+		"enum_name": "宁夏",
+		"enum_id": "宁夏"
+	}, {
+		"enum_name": "巴真",
+		"enum_id": "巴真"
+	}, {
+		"enum_name": "马尼拉大都会",
+		"enum_id": "马尼拉大都会"
+	}, {
+		"enum_name": "catalonia",
+		"enum_id": "catalonia"
+	}, {
+		"enum_name": "Salavan",
+		"enum_id": "Salavan"
+	}, {
+		"enum_name": "魁北克",
+		"enum_id": "魁北克"
+	}, {
+		"enum_name": "勃兰登堡",
+		"enum_id": "勃兰登堡"
+	}, {
+		"enum_name": "Maritime",
+		"enum_id": "Maritime"
+	}, {
+		"enum_name": "石川",
+		"enum_id": "石川"
+	}, {
+		"enum_name": "阿治曼",
+		"enum_id": "阿治曼"
+	}, {
+		"enum_name": "Arizona",
+		"enum_id": "Arizona"
+	}, {
+		"enum_name": "Eastern Region",
+		"enum_id": "Eastern Region"
+	}, {
+		"enum_name": "Region de Antofagasta",
+		"enum_id": "Region de Antofagasta"
+	}, {
+		"enum_name": "彭世洛",
+		"enum_id": "彭世洛"
+	}, {
+		"enum_name": "阿拉斯加",
+		"enum_id": "阿拉斯加"
+	}, {
+		"enum_name": "Jazan",
+		"enum_id": "Jazan"
+	}, {
+		"enum_name": "阿斯图里亚斯",
+		"enum_id": "阿斯图里亚斯"
+	}, {
+		"enum_name": "Midlands Province",
+		"enum_id": "Midlands Province"
+	}, {
+		"enum_name": "Oran",
+		"enum_id": "Oran"
+	}, {
+		"enum_name": "奥多棉吉",
+		"enum_id": "奥多棉吉"
+	}, {
+		"enum_name": "中日德兰大区",
+		"enum_id": "中日德兰大区"
+	}, {
+		"enum_name": "Catalonia",
+		"enum_id": "Catalonia"
+	}, {
+		"enum_name": "罗兹",
+		"enum_id": "罗兹"
+	}, {
+		"enum_name": "Porto District",
+		"enum_id": "Porto District"
+	}, {
+		"enum_name": "南加里曼丹",
+		"enum_id": "南加里曼丹"
+	}, {
+		"enum_name": "Edo",
+		"enum_id": "Edo"
+	}, {
+		"enum_name": "梁赞州",
+		"enum_id": "梁赞州"
+	}, {
+		"enum_name": "弗留利－威尼斯－朱利亚",
+		"enum_id": "弗留利－威尼斯－朱利亚"
+	}, {
+		"enum_name": "清莱",
+		"enum_id": "清莱"
+	}, {
+		"enum_name": "Saint-Louis",
+		"enum_id": "Saint-Louis"
+	}, {
+		"enum_name": "Nitra",
+		"enum_id": "Nitra"
+	}, {
+		"enum_name": "不列颠哥伦比亚省",
+		"enum_id": "不列颠哥伦比亚省"
+	}, {
+		"enum_name": "Western Highlands Province",
+		"enum_id": "Western Highlands Province"
+	}, {
+		"enum_name": "wales",
+		"enum_id": "wales"
+	}, {
+		"enum_name": "phu tho",
+		"enum_id": "phu tho"
+	}, {
+		"enum_name": "和平",
+		"enum_id": "和平"
+	}, {
+		"enum_name": "Distrito Capital",
+		"enum_id": "Distrito Capital"
+	}, {
+		"enum_name": "Changwat Nakhon Sawan",
+		"enum_id": "Changwat Nakhon Sawan"
+	}, {
+		"enum_name": "Delta",
+		"enum_id": "Delta"
+	}, {
+		"enum_name": "Comunitat Autònoma de les Illes Balears",
+		"enum_id": "Comunitat Autònoma de les Illes Balears"
+	}, {
+		"enum_name": "圣路易斯波托西",
+		"enum_id": "圣路易斯波托西"
+	}, {
+		"enum_name": "福岛县",
+		"enum_id": "福岛县"
+	}, {
+		"enum_name": "下诺夫哥罗德州",
+		"enum_id": "下诺夫哥罗德州"
+	}, {
+		"enum_name": "Ahmadi",
+		"enum_id": "Ahmadi"
+	}, {
+		"enum_name": "Tỉnh Yên Bái",
+		"enum_id": "Tỉnh Yên Bái"
+	}, {
+		"enum_name": "代盖赫利耶",
+		"enum_id": "代盖赫利耶"
+	}, {
+		"enum_name": "Oriental",
+		"enum_id": "Oriental"
+	}, {
+		"enum_name": "Province du Kongo Central",
+		"enum_id": "Province du Kongo Central"
+	}, {
+		"enum_name": "Judeţul Argeş",
+		"enum_id": "Judeţul Argeş"
+	}, {
+		"enum_name": "卢瓦尔河地区",
+		"enum_id": "卢瓦尔河地区"
+	}, {
+		"enum_name": "Shkoder",
+		"enum_id": "Shkoder"
+	}, {
+		"enum_name": "赫尔松州",
+		"enum_id": "赫尔松州"
+	}, {
+		"enum_name": "Astrakhanskaya Oblast’",
+		"enum_id": "Astrakhanskaya Oblast’"
+	}, {
+		"enum_name": "North Rhine-Westphalia",
+		"enum_id": "North Rhine-Westphalia"
+	}, {
+		"enum_name": "tinh hoa binh",
+		"enum_id": "tinh hoa binh"
+	}, {
+		"enum_name": "Гомельская",
+		"enum_id": "Гомельская"
+	}, {
+		"enum_name": "Estado de Quintana Roo",
+		"enum_id": "Estado de Quintana Roo"
+	}, {
+		"enum_name": "Attapeu",
+		"enum_id": "Attapeu"
+	}, {
+		"enum_name": "Capital",
+		"enum_id": "Capital"
+	}, {
+		"enum_name": "Haut-Lomami",
+		"enum_id": "Haut-Lomami"
+	}, {
+		"enum_name": "Kouilou Department",
+		"enum_id": "Kouilou Department"
+	}, {
+		"enum_name": "Shabelle Hoose",
+		"enum_id": "Shabelle Hoose"
+	}, {
+		"enum_name": "KwaZulu-Natal",
+		"enum_id": "KwaZulu-Natal"
+	}, {
+		"enum_name": "科斯特罗马州",
+		"enum_id": "科斯特罗马州"
+	}, {
+		"enum_name": "东约特兰省",
+		"enum_id": "东约特兰省"
+	}, {
+		"enum_name": "Addu Atoll",
+		"enum_id": "Addu Atoll"
+	}, {
+		"enum_name": "ayeyawady region",
+		"enum_id": "ayeyawady region"
+	}, {
+		"enum_name": "Region de Kedougou",
+		"enum_id": "Region de Kedougou"
+	}, {
+		"enum_name": "Takeo",
+		"enum_id": "Takeo"
+	}, {
+		"enum_name": "Cherkas'ka oblast'",
+		"enum_id": "Cherkas'ka oblast'"
+	}, {
+		"enum_name": "changwat pathum thani",
+		"enum_id": "changwat pathum thani"
+	}, {
+		"enum_name": "hai phong",
+		"enum_id": "hai phong"
+	}, {
+		"enum_name": "ปัตตานี",
+		"enum_id": "ปัตตานี"
+	}, {
+		"enum_name": "达米埃塔",
+		"enum_id": "达米埃塔"
+	}, {
+		"enum_name": "Kisumu",
+		"enum_id": "Kisumu"
+	}, {
+		"enum_name": "Departamento de Cochabamba",
+		"enum_id": "Departamento de Cochabamba"
+	}, {
+		"enum_name": "Isfahan",
+		"enum_id": "Isfahan"
+	}, {
+		"enum_name": "municipio de santiago de cuba",
+		"enum_id": "municipio de santiago de cuba"
+	}, {
+		"enum_name": "Changwat Ubon Ratchathani",
+		"enum_id": "Changwat Ubon Ratchathani"
+	}, {
+		"enum_name": "Bulawayo Province",
+		"enum_id": "Bulawayo Province"
+	}, {
+		"enum_name": "Herat",
+		"enum_id": "Herat"
+	}, {
+		"enum_name": "Sembabule District",
+		"enum_id": "Sembabule District"
+	}, {
+		"enum_name": "Lake Viktoria",
+		"enum_id": "Lake Viktoria"
+	}, {
+		"enum_name": "Sanem",
+		"enum_id": "Sanem"
+	}, {
+		"enum_name": "Nandi",
+		"enum_id": "Nandi"
+	}, {
+		"enum_name": "Estado Anzoátegui",
+		"enum_id": "Estado Anzoátegui"
+	}, {
+		"enum_name": "Samtskhe-Javakheti",
+		"enum_id": "Samtskhe-Javakheti"
+	}, {
+		"enum_name": "Malanje Province",
+		"enum_id": "Malanje Province"
+	}, {
+		"enum_name": "Eparchía Lárnakas",
+		"enum_id": "Eparchía Lárnakas"
+	}, {
+		"enum_name": "พิจิตร",
+		"enum_id": "พิจิตร"
+	}, {
+		"enum_name": "kano state",
+		"enum_id": "kano state"
+	}, {
+		"enum_name": "Vysocina",
+		"enum_id": "Vysocina"
+	}, {
+		"enum_name": "达德拉-纳加尔哈维利和达曼-第乌",
+		"enum_id": "达德拉-纳加尔哈维利和达曼-第乌"
+	}, {
+		"enum_name": "Sligo",
+		"enum_id": "Sligo"
+	}, {
+		"enum_name": "demerara-mahaica region",
+		"enum_id": "demerara-mahaica region"
+	}, {
+		"enum_name": "阿达纳",
+		"enum_id": "阿达纳"
+	}, {
+		"enum_name": "balochistan",
+		"enum_id": "balochistan"
+	}, {
+		"enum_name": "Jerusalem",
+		"enum_id": "Jerusalem"
+	}, {
+		"enum_name": "provincia de heredia",
+		"enum_id": "provincia de heredia"
+	}, {
+		"enum_name": "Saldus Municipality",
+		"enum_id": "Saldus Municipality"
+	}, {
+		"enum_name": "خوزستان",
+		"enum_id": "خوزستان"
+	}, {
+		"enum_name": "Bohol",
+		"enum_id": "Bohol"
+	}, {
+		"enum_name": "Región del Libertador General Bernardo O’Higgins",
+		"enum_id": "Región del Libertador General Bernardo O’Higgins"
+	}, {
+		"enum_name": "Mombasa",
+		"enum_id": "Mombasa"
+	}, {
+		"enum_name": "Paramaribo",
+		"enum_id": "Paramaribo"
+	}, {
+		"enum_name": "chaco",
+		"enum_id": "chaco"
+	}, {
+		"enum_name": "圣地亚哥-德尔埃斯特罗",
+		"enum_id": "圣地亚哥-德尔埃斯特罗"
+	}, {
+		"enum_name": "Adrar",
+		"enum_id": "Adrar"
+	}, {
+		"enum_name": "Changwat Yala",
+		"enum_id": "Changwat Yala"
+	}, {
+		"enum_name": "摩爾曼斯克州",
+		"enum_id": "摩爾曼斯克州"
+	}, {
+		"enum_name": "巴斯利卡塔",
+		"enum_id": "巴斯利卡塔"
+	}, {
+		"enum_name": "Rivnens’ka Oblast’",
+		"enum_id": "Rivnens’ka Oblast’"
+	}, {
+		"enum_name": "Castelo Branco",
+		"enum_id": "Castelo Branco"
+	}, {
+		"enum_name": "california",
+		"enum_id": "california"
+	}, {
+		"enum_name": "Uva",
+		"enum_id": "Uva"
+	}, {
+		"enum_name": "changwat khon kaen",
+		"enum_id": "changwat khon kaen"
+	}, {
+		"enum_name": "Geita",
+		"enum_id": "Geita"
+	}, {
+		"enum_name": "Kalmykiya",
+		"enum_id": "Kalmykiya"
+	}, {
+		"enum_name": "Río Negro Province",
+		"enum_id": "Río Negro Province"
+	}, {
+		"enum_name": "เพชรบุรี",
+		"enum_id": "เพชรบุรี"
+	}, {
+		"enum_name": "Arakan",
+		"enum_id": "Arakan"
+	}, {
+		"enum_name": "province of batangas",
+		"enum_id": "province of batangas"
+	}, {
+		"enum_name": "Province of Batangas",
+		"enum_id": "Province of Batangas"
+	}, {
+		"enum_name": "Tinh Ca Mau",
+		"enum_id": "Tinh Ca Mau"
+	}, {
+		"enum_name": "Gouvernorat de Medenine",
+		"enum_id": "Gouvernorat de Medenine"
+	}, {
+		"enum_name": "Aqaba",
+		"enum_id": "Aqaba"
+	}, {
+		"enum_name": "Hoima District",
+		"enum_id": "Hoima District"
+	}, {
+		"enum_name": "Gombe",
+		"enum_id": "Gombe"
+	}, {
+		"enum_name": "Ganja City",
+		"enum_id": "Ganja City"
+	}, {
+		"enum_name": "Matara",
+		"enum_id": "Matara"
+	}, {
+		"enum_name": "马哈赞加",
+		"enum_id": "马哈赞加"
+	}, {
+		"enum_name": "An Mhí",
+		"enum_id": "An Mhí"
+	}, {
+		"enum_name": "Estado Amazonas",
+		"enum_id": "Estado Amazonas"
+	}, {
+		"enum_name": "Gouvernorat de Kasserine",
+		"enum_id": "Gouvernorat de Kasserine"
+	}, {
+		"enum_name": "Atyrau",
+		"enum_id": "Atyrau"
+	}, {
+		"enum_name": "River Nile",
+		"enum_id": "River Nile"
+	}, {
+		"enum_name": "马拉穆雷什",
+		"enum_id": "马拉穆雷什"
+	}, {
+		"enum_name": "Cuanza Sul",
+		"enum_id": "Cuanza Sul"
+	}, {
+		"enum_name": "East New Britain",
+		"enum_id": "East New Britain"
+	}, {
+		"enum_name": "Jinja District",
+		"enum_id": "Jinja District"
+	}, {
+		"enum_name": "central eleuthera district",
+		"enum_id": "central eleuthera district"
+	}, {
+		"enum_name": "Pointe Noire",
+		"enum_id": "Pointe Noire"
+	}, {
+		"enum_name": "斯里兰卡",
+		"enum_id": "斯里兰卡"
+	}, {
+		"enum_name": "Central Greece",
+		"enum_id": "Central Greece"
+	}, {
+		"enum_name": "montserrado county",
+		"enum_id": "montserrado county"
+	}, {
+		"enum_name": "changwat mukdahan",
+		"enum_id": "changwat mukdahan"
+	}, {
+		"enum_name": "changwat ubon ratchathani",
+		"enum_id": "changwat ubon ratchathani"
+	}, {
+		"enum_name": "Oshikoto Region",
+		"enum_id": "Oshikoto Region"
+	}, {
+		"enum_name": "Gasa",
+		"enum_id": "Gasa"
+	}, {
+		"enum_name": "Provincia de Ñuble",
+		"enum_id": "Provincia de Ñuble"
+	}, {
+		"enum_name": "houaphan",
+		"enum_id": "houaphan"
+	}, {
+		"enum_name": "Sistan & Baluchestan",
+		"enum_id": "Sistan & Baluchestan"
+	}, {
+		"enum_name": "المرقب",
+		"enum_id": "المرقب"
+	}, {
+		"enum_name": "Province de l’Ogooué-Maritime",
+		"enum_id": "Province de l’Ogooué-Maritime"
+	}, {
+		"enum_name": "Manicaland",
+		"enum_id": "Manicaland"
+	}, {
+		"enum_name": "Point Fortin",
+		"enum_id": "Point Fortin"
+	}, {
+		"enum_name": "Jurmala",
+		"enum_id": "Jurmala"
+	}, {
+		"enum_name": "Ömnögovĭ",
+		"enum_id": "Ömnögovĭ"
+	}, {
+		"enum_name": "Departamento de Comayagua",
+		"enum_id": "Departamento de Comayagua"
+	}, {
+		"enum_name": "Saga",
+		"enum_id": "Saga"
+	}, {
+		"enum_name": "Libertador General Bernardo O'Higgins",
+		"enum_id": "Libertador General Bernardo O'Higgins"
+	}, {
+		"enum_name": "kemerovskaya oblast'",
+		"enum_id": "kemerovskaya oblast'"
+	}, {
+		"enum_name": "Busia",
+		"enum_id": "Busia"
+	}, {
+		"enum_name": "Schwyz",
+		"enum_id": "Schwyz"
+	}, {
+		"enum_name": "state of western australia",
+		"enum_id": "state of western australia"
+	}, {
+		"enum_name": "Mokhotlong",
+		"enum_id": "Mokhotlong"
+	}, {
+		"enum_name": "Karbala",
+		"enum_id": "Karbala"
+	}, {
+		"enum_name": "Varsinais-Suomen maakunta",
+		"enum_id": "Varsinais-Suomen maakunta"
+	}, {
+		"enum_name": "Επαρχία Λάρνακας",
+		"enum_id": "Επαρχία Λάρνακας"
+	}, {
+		"enum_name": "Läänemaa",
+		"enum_id": "Läänemaa"
+	}, {
+		"enum_name": "Ennedi-Ouest",
+		"enum_id": "Ennedi-Ouest"
+	}, {
+		"enum_name": "Dalarnas",
+		"enum_id": "Dalarnas"
+	}, {
+		"enum_name": "Vaslui",
+		"enum_id": "Vaslui"
+	}, {
+		"enum_name": "Auvergne-Rhone-Alpes",
+		"enum_id": "Auvergne-Rhone-Alpes"
+	}, {
+		"enum_name": "kayin",
+		"enum_id": "kayin"
+	}, {
+		"enum_name": "吉林",
+		"enum_id": "吉林"
+	}, {
+		"enum_name": "纽约",
+		"enum_id": "纽约"
+	}, {
+		"enum_name": "砂拉越",
+		"enum_id": "砂拉越"
+	}, {
+		"enum_name": "马哈拉施特拉邦",
+		"enum_id": "马哈拉施特拉邦"
+	}, {
+		"enum_name": "茶胶",
+		"enum_id": "茶胶"
+	}, {
+		"enum_name": "Kayin State",
+		"enum_id": "Kayin State"
+	}, {
+		"enum_name": "Vientiane Province",
+		"enum_id": "Vientiane Province"
+	}, {
+		"enum_name": "犹他",
+		"enum_id": "犹他"
+	}, {
+		"enum_name": "巴厘岛",
+		"enum_id": "巴厘岛"
+	}, {
+		"enum_name": "琼格拉德",
+		"enum_id": "琼格拉德"
+	}, {
+		"enum_name": "Syrdar'inskaya o.",
+		"enum_id": "Syrdar'inskaya o."
+	}, {
+		"enum_name": "Минская",
+		"enum_id": "Минская"
+	}, {
+		"enum_name": "Canterbury Region",
+		"enum_id": "Canterbury Region"
+	}, {
+		"enum_name": "Santarem District",
+		"enum_id": "Santarem District"
+	}, {
+		"enum_name": "暖武里",
+		"enum_id": "暖武里"
+	}, {
+		"enum_name": "加兹温",
+		"enum_id": "加兹温"
+	}, {
+		"enum_name": "khyber pakhtunkhwa",
+		"enum_id": "khyber pakhtunkhwa"
+	}, {
+		"enum_name": "高平",
+		"enum_id": "高平"
+	}, {
+		"enum_name": "安卡拉省",
+		"enum_id": "安卡拉省"
+	}, {
+		"enum_name": "Eparchia Lemesou",
+		"enum_id": "Eparchia Lemesou"
+	}, {
+		"enum_name": "沙没颂堪府",
+		"enum_id": "沙没颂堪府"
+	}, {
+		"enum_name": "联邦区",
+		"enum_id": "联邦区"
+	}, {
+		"enum_name": "呵叻（那空叻差是玛）",
+		"enum_id": "呵叻（那空叻差是玛）"
+	}, {
+		"enum_name": "American Samoa",
+		"enum_id": "American Samoa"
+	}, {
+		"enum_name": "佛统",
+		"enum_id": "佛统"
+	}, {
+		"enum_name": "Tỉnh Quảng Ninh",
+		"enum_id": "Tỉnh Quảng Ninh"
+	}, {
+		"enum_name": "La Riviere Anglaise",
+		"enum_id": "La Riviere Anglaise"
+	}, {
+		"enum_name": "Kiambu District",
+		"enum_id": "Kiambu District"
+	}, {
+		"enum_name": "kayin state",
+		"enum_id": "kayin state"
+	}, {
+		"enum_name": "Región de Coquimbo",
+		"enum_id": "Región de Coquimbo"
+	}, {
+		"enum_name": "St. James",
+		"enum_id": "St. James"
+	}, {
+		"enum_name": "阿拉贡",
+		"enum_id": "阿拉贡"
+	}, {
+		"enum_name": "Long An",
+		"enum_id": "Long An"
+	}, {
+		"enum_name": "valencia",
+		"enum_id": "valencia"
+	}, {
+		"enum_name": "莱洲",
+		"enum_id": "莱洲"
+	}, {
+		"enum_name": "qld",
+		"enum_id": "qld"
+	}, {
+		"enum_name": "台南",
+		"enum_id": "台南"
+	}, {
+		"enum_name": "春蓬府",
+		"enum_id": "春蓬府"
+	}, {
+		"enum_name": "Misto Kiiv",
+		"enum_id": "Misto Kiiv"
+	}, {
+		"enum_name": "Changwat Udon Thani",
+		"enum_id": "Changwat Udon Thani"
+	}, {
+		"enum_name": "Gouvernorat de Gabes",
+		"enum_id": "Gouvernorat de Gabes"
+	}, {
+		"enum_name": "Changwat Nakhon Pathom",
+		"enum_id": "Changwat Nakhon Pathom"
+	}, {
+		"enum_name": "Niger",
+		"enum_id": "Niger"
+	}, {
+		"enum_name": "changwat sukhothai",
+		"enum_id": "changwat sukhothai"
+	}, {
+		"enum_name": "Gouvernorat de Sousse",
+		"enum_id": "Gouvernorat de Sousse"
+	}, {
+		"enum_name": "Bremen",
+		"enum_id": "Bremen"
+	}, {
+		"enum_name": "Unitatea Teritoriala din Stinga Nistrului",
+		"enum_id": "Unitatea Teritoriala din Stinga Nistrului"
+	}, {
+		"enum_name": "Estado Cojedes",
+		"enum_id": "Estado Cojedes"
+	}, {
+		"enum_name": "Västerbottens län",
+		"enum_id": "Västerbottens län"
+	}, {
+		"enum_name": "Skåne",
+		"enum_id": "Skåne"
+	}, {
+		"enum_name": "San Cristobal",
+		"enum_id": "San Cristobal"
+	}, {
+		"enum_name": "Hadjer-Lamis",
+		"enum_id": "Hadjer-Lamis"
+	}, {
+		"enum_name": "萨拉托夫州",
+		"enum_id": "萨拉托夫州"
+	}, {
+		"enum_name": "Chontales Department",
+		"enum_id": "Chontales Department"
+	}, {
+		"enum_name": "Mayaro-Rio Claro",
+		"enum_id": "Mayaro-Rio Claro"
+	}, {
+		"enum_name": "阿扎德克什米尔",
+		"enum_id": "阿扎德克什米尔"
+	}, {
+		"enum_name": "乌伊拉",
+		"enum_id": "乌伊拉"
+	}, {
+		"enum_name": "colorado",
+		"enum_id": "colorado"
+	}, {
+		"enum_name": "卡赫拉曼马拉什",
+		"enum_id": "卡赫拉曼马拉什"
+	}, {
+		"enum_name": "province of davao del sur",
+		"enum_id": "province of davao del sur"
+	}, {
+		"enum_name": "Gobolka Banaadir",
+		"enum_id": "Gobolka Banaadir"
+	}, {
+		"enum_name": "ha noi",
+		"enum_id": "ha noi"
+	}, {
+		"enum_name": "Tinh Hung Yen",
+		"enum_id": "Tinh Hung Yen"
+	}, {
+		"enum_name": "Nakaseke District",
+		"enum_id": "Nakaseke District"
+	}, {
+		"enum_name": "Eddakhla-Oued Eddahab",
+		"enum_id": "Eddakhla-Oued Eddahab"
+	}, {
+		"enum_name": "🇯🇪",
+		"enum_id": "🇯🇪"
+	}, {
+		"enum_name": "Coquimbo",
+		"enum_id": "Coquimbo"
+	}, {
+		"enum_name": "Kiruhura District",
+		"enum_id": "Kiruhura District"
+	}, {
+		"enum_name": "changwat phangnga",
+		"enum_id": "changwat phangnga"
+	}, {
+		"enum_name": "changwat udon thani",
+		"enum_id": "changwat udon thani"
+	}, {
+		"enum_name": "Portland Parish",
+		"enum_id": "Portland Parish"
+	}, {
+		"enum_name": "济州岛",
+		"enum_id": "济州岛"
+	}, {
+		"enum_name": "changwat nakhon pathom",
+		"enum_id": "changwat nakhon pathom"
+	}, {
+		"enum_name": "Královéhradecký k",
+		"enum_id": "Královéhradecký k"
+	}, {
+		"enum_name": "日托米尔",
+		"enum_id": "日托米尔"
+	}, {
+		"enum_name": "Changwat Trang",
+		"enum_id": "Changwat Trang"
+	}, {
+		"enum_name": "诺格拉德",
+		"enum_id": "诺格拉德"
+	}, {
+		"enum_name": "Alexandria",
+		"enum_id": "Alexandria"
+	}, {
+		"enum_name": "changwat chai nat",
+		"enum_id": "changwat chai nat"
+	}, {
+		"enum_name": "Thanh Pho Can Tho",
+		"enum_id": "Thanh Pho Can Tho"
+	}, {
+		"enum_name": "Mashonaland East",
+		"enum_id": "Mashonaland East"
+	}, {
+		"enum_name": "Ghanzi District",
+		"enum_id": "Ghanzi District"
+	}, {
+		"enum_name": "Keski-Pohjanmaa",
+		"enum_id": "Keski-Pohjanmaa"
+	}, {
+		"enum_name": "Iganga District",
+		"enum_id": "Iganga District"
+	}, {
+		"enum_name": "bahia",
+		"enum_id": "bahia"
+	}, {
+		"enum_name": "සබරගමුව",
+		"enum_id": "සබරගමුව"
+	}, {
+		"enum_name": "东萨塞克斯郡",
+		"enum_id": "东萨塞克斯郡"
+	}, {
+		"enum_name": "الدار البيضاء الكبرى - سطات",
+		"enum_id": "الدار البيضاء الكبرى - سطات"
+	}, {
+		"enum_name": "Tinh Binh Duong",
+		"enum_id": "Tinh Binh Duong"
+	}, {
+		"enum_name": "Paraíba",
+		"enum_id": "Paraíba"
+	}, {
+		"enum_name": "Автономна Республіка Крим",
+		"enum_id": "Автономна Республіка Крим"
+	}, {
+		"enum_name": "Departamento de Islas de la Bahía",
+		"enum_id": "Departamento de Islas de la Bahía"
+	}, {
+		"enum_name": "Provincia de Imbabura",
+		"enum_id": "Provincia de Imbabura"
+	}, {
+		"enum_name": "Región de Murcia",
+		"enum_id": "Región de Murcia"
+	}, {
+		"enum_name": "Diyālá",
+		"enum_id": "Diyālá"
+	}, {
+		"enum_name": "Segou Region",
+		"enum_id": "Segou Region"
+	}, {
+		"enum_name": "Western Equatoria",
+		"enum_id": "Western Equatoria"
+	}, {
+		"enum_name": "Province 1",
+		"enum_id": "Province 1"
+	}, {
+		"enum_name": "Калужская область",
+		"enum_id": "Калужская область"
+	}, {
+		"enum_name": "Baa Atholhu",
+		"enum_id": "Baa Atholhu"
+	}, {
+		"enum_name": "nagasaki",
+		"enum_id": "nagasaki"
+	}, {
+		"enum_name": "Qyzylorda Oblysy",
+		"enum_id": "Qyzylorda Oblysy"
+	}, {
+		"enum_name": "siemreab-otdar meanchey",
+		"enum_id": "siemreab-otdar meanchey"
+	}, {
+		"enum_name": "xiangkhoang",
+		"enum_id": "xiangkhoang"
+	}, {
+		"enum_name": "Departamento de Bolívar",
+		"enum_id": "Departamento de Bolívar"
+	}, {
+		"enum_name": "tinh binh duong",
+		"enum_id": "tinh binh duong"
+	}, {
+		"enum_name": "Penzenskaya Oblast’",
+		"enum_id": "Penzenskaya Oblast’"
+	}, {
+		"enum_name": "Maan",
+		"enum_id": "Maan"
+	}, {
+		"enum_name": "巴伦西亚自治区",
+		"enum_id": "巴伦西亚自治区"
+	}, {
+		"enum_name": "de",
+		"enum_id": "de"
+	}, {
+		"enum_name": "Wan Chai",
+		"enum_id": "Wan Chai"
+	}, {
+		"enum_name": "central district",
+		"enum_id": "central district"
+	}, {
+		"enum_name": "Santa Cruz Province",
+		"enum_id": "Santa Cruz Province"
+	}, {
+		"enum_name": "Roscommon",
+		"enum_id": "Roscommon"
+	}, {
+		"enum_name": "登盖莱区",
+		"enum_id": "登盖莱区"
+	}, {
+		"enum_name": "普林西比岛",
+		"enum_id": "普林西比岛"
+	}, {
+		"enum_name": "astana qalasy",
+		"enum_id": "astana qalasy"
+	}, {
+		"enum_name": "加拿大",
+		"enum_id": "加拿大"
+	}, {
+		"enum_name": "克拉斯诺达尔边疆区",
+		"enum_id": "克拉斯诺达尔边疆区"
+	}, {
+		"enum_name": "departamento de la paz",
+		"enum_id": "departamento de la paz"
+	}, {
+		"enum_name": "Nimba County",
+		"enum_id": "Nimba County"
+	}, {
+		"enum_name": "Волинська область",
+		"enum_id": "Волинська область"
+	}, {
+		"enum_name": "province of negros oriental",
+		"enum_id": "province of negros oriental"
+	}, {
+		"enum_name": "素叻府",
+		"enum_id": "素叻府"
+	}, {
+		"enum_name": "Thiès",
+		"enum_id": "Thiès"
+	}, {
+		"enum_name": "Astana Qalasy",
+		"enum_id": "Astana Qalasy"
+	}, {
+		"enum_name": "bicol",
+		"enum_id": "bicol"
+	}, {
+		"enum_name": "Hunedoara",
+		"enum_id": "Hunedoara"
+	}, {
+		"enum_name": "Departamento de Escuintla",
+		"enum_id": "Departamento de Escuintla"
+	}, {
+		"enum_name": "omskaya oblast'",
+		"enum_id": "omskaya oblast'"
+	}, {
+		"enum_name": "Distrikt Brokopondo",
+		"enum_id": "Distrikt Brokopondo"
+	}, {
+		"enum_name": "埃塞俄比亚",
+		"enum_id": "埃塞俄比亚"
+	}, {
+		"enum_name": "Miklavž na Dravskem Polju Municipality",
+		"enum_id": "Miklavž na Dravskem Polju Municipality"
+	}, {
+		"enum_name": "thua thien-hue",
+		"enum_id": "thua thien-hue"
+	}, {
+		"enum_name": "Nyandarua",
+		"enum_id": "Nyandarua"
+	}, {
+		"enum_name": "Trujillo",
+		"enum_id": "Trujillo"
+	}, {
+		"enum_name": "巴奇-基什孔州",
+		"enum_id": "巴奇-基什孔州"
+	}, {
+		"enum_name": "Tinh Dien Bien",
+		"enum_id": "Tinh Dien Bien"
+	}, {
+		"enum_name": "Provincia de Bocas del Toro",
+		"enum_id": "Provincia de Bocas del Toro"
+	}, {
+		"enum_name": "浙江",
+		"enum_id": "浙江"
+	}, {
+		"enum_name": "青海",
+		"enum_id": "青海"
+	}, {
+		"enum_name": "南澳大利亚州",
+		"enum_id": "南澳大利亚州"
+	}, {
+		"enum_name": "胡志明市",
+		"enum_id": "胡志明市"
+	}, {
+		"enum_name": "Greater Accra",
+		"enum_id": "Greater Accra"
+	}, {
+		"enum_name": "豪伊杜-比豪尔",
+		"enum_id": "豪伊杜-比豪尔"
+	}, {
+		"enum_name": "北卡罗来纳",
+		"enum_id": "北卡罗来纳"
+	}, {
+		"enum_name": "西爪哇",
+		"enum_id": "西爪哇"
+	}, {
+		"enum_name": "greater accra region",
+		"enum_id": "greater accra region"
+	}, {
+		"enum_name": "科納克里",
+		"enum_id": "科納克里"
+	}, {
+		"enum_name": "亚拉巴马州",
+		"enum_id": "亚拉巴马州"
+	}, {
+		"enum_name": "新泽西",
+		"enum_id": "新泽西"
+	}, {
+		"enum_name": "明古鲁省",
+		"enum_id": "明古鲁省"
+	}, {
+		"enum_name": "Ulaanbaatar",
+		"enum_id": "Ulaanbaatar"
+	}, {
+		"enum_name": "沙迦",
+		"enum_id": "沙迦"
+	}, {
+		"enum_name": "阿尔及尔",
+		"enum_id": "阿尔及尔"
+	}, {
+		"enum_name": "울산광역시",
+		"enum_id": "울산광역시"
+	}, {
+		"enum_name": "Addis Ababa",
+		"enum_id": "Addis Ababa"
+	}, {
+		"enum_name": "Catalunya",
+		"enum_id": "Catalunya"
+	}, {
+		"enum_name": "苏黎世州",
+		"enum_id": "苏黎世州"
+	}, {
+		"enum_name": "卡斯蒂利亚-莱昂",
+		"enum_id": "卡斯蒂利亚-莱昂"
+	}, {
+		"enum_name": "沙缴",
+		"enum_id": "沙缴"
+	}, {
+		"enum_name": "庆尚北",
+		"enum_id": "庆尚北"
+	}, {
+		"enum_name": "印古什共和国",
+		"enum_id": "印古什共和国"
+	}, {
+		"enum_name": "Ðắk Nông",
+		"enum_id": "Ðắk Nông"
+	}, {
+		"enum_name": "米却肯",
+		"enum_id": "米却肯"
+	}, {
+		"enum_name": "punjab",
+		"enum_id": "punjab"
+	}, {
+		"enum_name": "San Pedro de Macorís",
+		"enum_id": "San Pedro de Macorís"
+	}, {
+		"enum_name": "changwat chanthaburi",
+		"enum_id": "changwat chanthaburi"
+	}, {
+		"enum_name": "北卡罗来纳州",
+		"enum_id": "北卡罗来纳州"
+	}, {
+		"enum_name": "Mubende District",
+		"enum_id": "Mubende District"
+	}, {
+		"enum_name": "Tỉnh Hà Giang",
+		"enum_id": "Tỉnh Hà Giang"
+	}, {
+		"enum_name": "changwat songkhla",
+		"enum_id": "changwat songkhla"
+	}, {
+		"enum_name": "平定",
+		"enum_id": "平定"
+	}, {
+		"enum_name": "新地区",
+		"enum_id": "新地区"
+	}, {
+		"enum_name": "Southwest Finland",
+		"enum_id": "Southwest Finland"
+	}, {
+		"enum_name": "Thành Phố Cần Thơ",
+		"enum_id": "Thành Phố Cần Thơ"
+	}, {
+		"enum_name": "Gyeongsangnam-do",
+		"enum_id": "Gyeongsangnam-do"
+	}, {
+		"enum_name": "Daejeon",
+		"enum_id": "Daejeon"
+	}, {
+		"enum_name": "夏威夷州",
+		"enum_id": "夏威夷州"
+	}, {
+		"enum_name": "Departamento de Santa Cruz",
+		"enum_id": "Departamento de Santa Cruz"
+	}, {
+		"enum_name": "Niger State",
+		"enum_id": "Niger State"
+	}, {
+		"enum_name": "廊开府",
+		"enum_id": "廊开府"
+	}, {
+		"enum_name": "明古鲁",
+		"enum_id": "明古鲁"
+	}, {
+		"enum_name": "North Central",
+		"enum_id": "North Central"
+	}, {
+		"enum_name": "Donets’ka Oblast’",
+		"enum_id": "Donets’ka Oblast’"
+	}, {
+		"enum_name": "Rukwa",
+		"enum_id": "Rukwa"
+	}, {
+		"enum_name": "Changwat Surin",
+		"enum_id": "Changwat Surin"
+	}, {
+		"enum_name": "Tỉnh Sơn La",
+		"enum_id": "Tỉnh Sơn La"
+	}, {
+		"enum_name": "Navoiyskaya o.",
+		"enum_id": "Navoiyskaya o."
+	}, {
+		"enum_name": "Balti",
+		"enum_id": "Balti"
+	}, {
+		"enum_name": "Kelantan",
+		"enum_id": "Kelantan"
+	}, {
+		"enum_name": "Sofiya (stolitza)",
+		"enum_id": "Sofiya (stolitza)"
+	}, {
+		"enum_name": "伊斯梅利亚",
+		"enum_id": "伊斯梅利亚"
+	}, {
+		"enum_name": "岩手县",
+		"enum_id": "岩手县"
+	}, {
+		"enum_name": "Місто Київ",
+		"enum_id": "Місто Київ"
+	}, {
+		"enum_name": "Gobolka Woqooyi Galbeed",
+		"enum_id": "Gobolka Woqooyi Galbeed"
+	}, {
+		"enum_name": "София (столица)",
+		"enum_id": "София (столица)"
+	}, {
+		"enum_name": "Burgas",
+		"enum_id": "Burgas"
+	}, {
+		"enum_name": "Zinder",
+		"enum_id": "Zinder"
+	}, {
+		"enum_name": "Okinawa",
+		"enum_id": "Okinawa"
+	}, {
+		"enum_name": "Amurskaya Oblast’",
+		"enum_id": "Amurskaya Oblast’"
+	}, {
+		"enum_name": "pulau pinang",
+		"enum_id": "pulau pinang"
+	}, {
+		"enum_name": "province of tarlac",
+		"enum_id": "province of tarlac"
+	}, {
+		"enum_name": "Departamento de Risaralda",
+		"enum_id": "Departamento de Risaralda"
+	}, {
+		"enum_name": "Uasin Gishu",
+		"enum_id": "Uasin Gishu"
+	}, {
+		"enum_name": "Anzoátegui",
+		"enum_id": "Anzoátegui"
+	}, {
+		"enum_name": "帕拉州",
+		"enum_id": "帕拉州"
+	}, {
+		"enum_name": "State of Odisha",
+		"enum_id": "State of Odisha"
+	}, {
+		"enum_name": "Upper Nile",
+		"enum_id": "Upper Nile"
+	}, {
+		"enum_name": "堪察加边疆区",
+		"enum_id": "堪察加边疆区"
+	}, {
+		"enum_name": "Tinh GJong Nai",
+		"enum_id": "Tinh GJong Nai"
+	}, {
+		"enum_name": "诺尔兰",
+		"enum_id": "诺尔兰"
+	}, {
+		"enum_name": "K'alak'i T'bilisi",
+		"enum_id": "K'alak'i T'bilisi"
+	}, {
+		"enum_name": "Kigoma Region",
+		"enum_id": "Kigoma Region"
+	}, {
+		"enum_name": "vaud",
+		"enum_id": "vaud"
+	}, {
+		"enum_name": "ostan-e kordestan",
+		"enum_id": "ostan-e kordestan"
+	}, {
+		"enum_name": "基隆市",
+		"enum_id": "基隆市"
+	}, {
+		"enum_name": "South Khorasan",
+		"enum_id": "South Khorasan"
+	}, {
+		"enum_name": "Trentino-Alto Adige",
+		"enum_id": "Trentino-Alto Adige"
+	}, {
+		"enum_name": "老街市",
+		"enum_id": "老街市"
+	}, {
+		"enum_name": "grodnenskaya",
+		"enum_id": "grodnenskaya"
+	}, {
+		"enum_name": "Tinh Soc Trang",
+		"enum_id": "Tinh Soc Trang"
+	}, {
+		"enum_name": "坎佩切州",
+		"enum_id": "坎佩切州"
+	}, {
+		"enum_name": "Töv Aymag",
+		"enum_id": "Töv Aymag"
+	}, {
+		"enum_name": "甘烹碧",
+		"enum_id": "甘烹碧"
+	}, {
+		"enum_name": "Muḩāfaz̧at Rīf Dimashq",
+		"enum_id": "Muḩāfaz̧at Rīf Dimashq"
+	}, {
+		"enum_name": "Qarku i Elbasanit",
+		"enum_id": "Qarku i Elbasanit"
+	}, {
+		"enum_name": "胡胡伊",
+		"enum_id": "胡胡伊"
+	}, {
+		"enum_name": "Камчатский край",
+		"enum_id": "Камчатский край"
+	}, {
+		"enum_name": "Province du Kasai Oriental",
+		"enum_id": "Province du Kasai Oriental"
+	}, {
+		"enum_name": "邦萨摩洛",
+		"enum_id": "邦萨摩洛"
+	}, {
+		"enum_name": "沃什州",
+		"enum_id": "沃什州"
+	}, {
+		"enum_name": "amman governorate",
+		"enum_id": "amman governorate"
+	}, {
+		"enum_name": "ulaanbaatar",
+		"enum_id": "ulaanbaatar"
+	}, {
+		"enum_name": "valais",
+		"enum_id": "valais"
+	}, {
+		"enum_name": "trentino-alto adige",
+		"enum_id": "trentino-alto adige"
+	}, {
+		"enum_name": "Ilfov",
+		"enum_id": "Ilfov"
+	}, {
+		"enum_name": "Viljandimaa",
+		"enum_id": "Viljandimaa"
+	}, {
+		"enum_name": "維克克區",
+		"enum_id": "維克克區"
+	}, {
+		"enum_name": "Olomouc",
+		"enum_id": "Olomouc"
+	}, {
+		"enum_name": "Pohjois-Pohjanmaa",
+		"enum_id": "Pohjois-Pohjanmaa"
+	}, {
+		"enum_name": "Distrito de Viana do Castelo",
+		"enum_id": "Distrito de Viana do Castelo"
+	}, {
+		"enum_name": "Province 2",
+		"enum_id": "Province 2"
+	}, {
+		"enum_name": "leiria",
+		"enum_id": "leiria"
+	}, {
+		"enum_name": "kagoshima",
+		"enum_id": "kagoshima"
+	}, {
+		"enum_name": "addis ababa",
+		"enum_id": "addis ababa"
+	}, {
+		"enum_name": "Changwat Loei",
+		"enum_id": "Changwat Loei"
+	}, {
+		"enum_name": "阿普里马克",
+		"enum_id": "阿普里马克"
+	}, {
+		"enum_name": "Rukwa Region",
+		"enum_id": "Rukwa Region"
+	}, {
+		"enum_name": "Kharkivs'ka Oblast'",
+		"enum_id": "Kharkivs'ka Oblast'"
+	}, {
+		"enum_name": "Ar Riyāḑ",
+		"enum_id": "Ar Riyāḑ"
+	}, {
+		"enum_name": "Estado de Aguascalientes",
+		"enum_id": "Estado de Aguascalientes"
+	}, {
+		"enum_name": "west pokot county",
+		"enum_id": "west pokot county"
+	}, {
+		"enum_name": "qc",
+		"enum_id": "qc"
+	}, {
+		"enum_name": "Tirol",
+		"enum_id": "Tirol"
+	}, {
+		"enum_name": "北奥塞梯-阿兰共和国",
+		"enum_id": "北奥塞梯-阿兰共和国"
+	}, {
+		"enum_name": "Wilaya de Tébessa",
+		"enum_id": "Wilaya de Tébessa"
+	}, {
+		"enum_name": "Kirovograds'ka oblast'",
+		"enum_id": "Kirovograds'ka oblast'"
+	}, {
+		"enum_name": "kampong cham",
+		"enum_id": "kampong cham"
+	}, {
+		"enum_name": "巴特曼",
+		"enum_id": "巴特曼"
+	}, {
+		"enum_name": "azores",
+		"enum_id": "azores"
+	}, {
+		"enum_name": "veracruz",
+		"enum_id": "veracruz"
+	}, {
+		"enum_name": "Өмнөговь",
+		"enum_id": "Өмнөговь"
+	}, {
+		"enum_name": "prey veng",
+		"enum_id": "prey veng"
+	}, {
+		"enum_name": "충청북도",
+		"enum_id": "충청북도"
+	}, {
+		"enum_name": "Guarda District",
+		"enum_id": "Guarda District"
+	}, {
+		"enum_name": "lhaviyani atholhu",
+		"enum_id": "lhaviyani atholhu"
+	}, {
+		"enum_name": "Львівська область",
+		"enum_id": "Львівська область"
+	}, {
+		"enum_name": "nairobi",
+		"enum_id": "nairobi"
+	}, {
+		"enum_name": "Zawchan",
+		"enum_id": "Zawchan"
+	}, {
+		"enum_name": "塞罗拉尔戈省",
+		"enum_id": "塞罗拉尔戈省"
+	}, {
+		"enum_name": "ar riyāḑ",
+		"enum_id": "ar riyāḑ"
+	}, {
+		"enum_name": "mid western",
+		"enum_id": "mid western"
+	}, {
+		"enum_name": "亚穆苏克罗",
+		"enum_id": "亚穆苏克罗"
+	}, {
+		"enum_name": "克伦邦",
+		"enum_id": "克伦邦"
+	}, {
+		"enum_name": "Chinandega",
+		"enum_id": "Chinandega"
+	}, {
+		"enum_name": "ondo",
+		"enum_id": "ondo"
+	}, {
+		"enum_name": "Gobolka Sanaag",
+		"enum_id": "Gobolka Sanaag"
+	}, {
+		"enum_name": "antsiranana",
+		"enum_id": "antsiranana"
+	}, {
+		"enum_name": "nayarit",
+		"enum_id": "nayarit"
+	}, {
+		"enum_name": "Prefecture de la Sangha-Mbaere",
+		"enum_id": "Prefecture de la Sangha-Mbaere"
+	}, {
+		"enum_name": "库亚维-波美拉尼亚省",
+		"enum_id": "库亚维-波美拉尼亚省"
+	}, {
+		"enum_name": "Kwajalein",
+		"enum_id": "Kwajalein"
+	}, {
+		"enum_name": "约兹加特省",
+		"enum_id": "约兹加特省"
+	}, {
+		"enum_name": "thành phố nam định",
+		"enum_id": "thành phố nam định"
+	}, {
+		"enum_name": "Østfold fylke",
+		"enum_id": "Østfold fylke"
+	}, {
+		"enum_name": "Kandahār",
+		"enum_id": "Kandahār"
+	}, {
+		"enum_name": "City of Francistown",
+		"enum_id": "City of Francistown"
+	}, {
+		"enum_name": "Judeţul Sălaj",
+		"enum_id": "Judeţul Sălaj"
+	}, {
+		"enum_name": "法属圭亚那",
+		"enum_id": "法属圭亚那"
+	}, {
+		"enum_name": "Elbasan",
+		"enum_id": "Elbasan"
+	}, {
+		"enum_name": "科瓦斯纳",
+		"enum_id": "科瓦斯纳"
+	}, {
+		"enum_name": "Jutiapa",
+		"enum_id": "Jutiapa"
+	}, {
+		"enum_name": "changwat loei",
+		"enum_id": "changwat loei"
+	}, {
+		"enum_name": "Oblast Razgrad",
+		"enum_id": "Oblast Razgrad"
+	}, {
+		"enum_name": "Møre og Romsdal fylke",
+		"enum_id": "Møre og Romsdal fylke"
+	}, {
+		"enum_name": "Mangochi",
+		"enum_id": "Mangochi"
+	}, {
+		"enum_name": "Maniema",
+		"enum_id": "Maniema"
+	}, {
+		"enum_name": "森美兰州",
+		"enum_id": "森美兰州"
+	}, {
+		"enum_name": "catalunya",
+		"enum_id": "catalunya"
+	}, {
+		"enum_name": "kagawa",
+		"enum_id": "kagawa"
+	}, {
+		"enum_name": "Balkh",
+		"enum_id": "Balkh"
+	}, {
+		"enum_name": "Savanne District",
+		"enum_id": "Savanne District"
+	}, {
+		"enum_name": "kharkivs'ka oblast'",
+		"enum_id": "kharkivs'ka oblast'"
+	}, {
+		"enum_name": "จ.นครศรีธรรมราช",
+		"enum_id": "จ.นครศรีธรรมราช"
+	}, {
+		"enum_name": "Миколаївська область",
+		"enum_id": "Миколаївська область"
+	}, {
+		"enum_name": "kampot province",
+		"enum_id": "kampot province"
+	}, {
+		"enum_name": "Kigoma",
+		"enum_id": "Kigoma"
+	}, {
+		"enum_name": "Leudelange",
+		"enum_id": "Leudelange"
+	}, {
+		"enum_name": "约旦",
+		"enum_id": "约旦"
+	}, {
+		"enum_name": "山东",
+		"enum_id": "山东"
+	}, {
+		"enum_name": "密歇根",
+		"enum_id": "密歇根"
+	}, {
+		"enum_name": "西约塔兰省",
+		"enum_id": "西约塔兰省"
+	}, {
+		"enum_name": "海尔德兰",
+		"enum_id": "海尔德兰"
+	}, {
+		"enum_name": "广岛县",
+		"enum_id": "广岛县"
+	}, {
+		"enum_name": "大西洋",
+		"enum_id": "大西洋"
+	}, {
+		"enum_name": "圣保罗",
+		"enum_id": "圣保罗"
+	}, {
+		"enum_name": "Khoueng Bokeo",
+		"enum_id": "Khoueng Bokeo"
+	}, {
+		"enum_name": "隆安",
+		"enum_id": "隆安"
+	}, {
+		"enum_name": "phnom penh",
+		"enum_id": "phnom penh"
+	}, {
+		"enum_name": "Negeri Sembilan",
+		"enum_id": "Negeri Sembilan"
+	}, {
+		"enum_name": "伊斯兰堡",
+		"enum_id": "伊斯兰堡"
+	}, {
+		"enum_name": "南苏拉威西",
+		"enum_id": "南苏拉威西"
+	}, {
+		"enum_name": "里斯本區",
+		"enum_id": "里斯本區"
+	}]
+}, {
+	"label_name": "是否14日内生服内容触达",
+	"label_code": "is_life_touch_14d",
+	"label_id": 2776,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "是否7日内生服内容触达",
+	"label_code": "is_life_touch_7d",
+	"label_id": 2781,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "最近30天内泛生活标签投稿数",
+	"label_code": "create_item_cnt_30d",
+	"label_id": 3404,
+	"enum_values": []
+}, {
+	"label_name": "最近30天内打卡锚点的视频投稿数",
+	"label_code": "create_poi_item_cnt_30d",
+	"label_id": 3405,
+	"enum_values": []
+}, {
+	"label_name": "最近60天内泛生活标签投稿数",
+	"label_code": "create_item_cnt_60d",
+	"label_id": 3415,
+	"enum_values": []
+}, {
+	"label_name": "最近90天内泛生活标签投稿数",
+	"label_code": "create_item_cnt_90d",
+	"label_id": 3416,
+	"enum_values": []
+}, {
+	"label_name": "最近60天内打卡锚点的视频投稿数",
+	"label_code": "create_poi_item_cnt_60d",
+	"label_id": 3417,
+	"enum_values": []
+}, {
+	"label_name": "最近90天内打卡锚点的视频投稿数",
+	"label_code": "create_poi_item_cnt_90d",
+	"label_id": 3418,
+	"enum_values": []
+}, {
+	"label_name": "最近90天内生活服务支付订单数",
+	"label_code": "life_pay_order_cnt_90d",
+	"label_id": 3398,
+	"enum_values": []
+}, {
+	"label_name": "最近60天内生活服务支付订单数",
+	"label_code": "life_pay_order_cnt_60d",
+	"label_id": 3402,
+	"enum_values": []
+}, {
+	"label_name": "最近30天内生活服务支付订单数",
+	"label_code": "life_pay_order_cnt_30d",
+	"label_id": 3414,
+	"enum_values": []
+}, {
+	"label_name": "最近180天内生活服务亲子品支付订单数",
+	"label_code": "life_pay_family_product_order_cnt_180d",
+	"label_id": 3573,
+	"enum_values": []
+}, {
+	"label_name": "生服酒旅核销时间段偏好(近180天成交)",
+	"label_code": "life_prefer_jv_verify_time_span",
+	"label_id": 3852,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "生服支付周期偏好",
+	"label_code": "life_prefer_pay_dur",
+	"label_id": 3856,
+	"enum_values": [{
+		"enum_name": "1天之内",
+		"enum_id": "1天之内"
+	}, {
+		"enum_name": "两周",
+		"enum_id": "两周"
+	}, {
+		"enum_name": "三周",
+		"enum_id": "三周"
+	}, {
+		"enum_name": "一周",
+		"enum_id": "一周"
+	}, {
+		"enum_name": "四周以上",
+		"enum_id": "四周以上"
+	}]
+}, {
+	"label_name": "生服餐饮核销时间段偏好(近180天成交)",
+	"label_code": "life_prefer_cy_verify_time_span",
+	"label_id": 3857,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "生服核销周期偏好",
+	"label_code": "life_prefer_verify_dur",
+	"label_id": 3864,
+	"enum_values": [{
+		"enum_name": "一周以上",
+		"enum_id": "一周以上"
+	}, {
+		"enum_name": "一周",
+		"enum_id": "一周"
+	}, {
+		"enum_name": "当天",
+		"enum_id": "当天"
+	}]
+}, {
+	"label_name": "生服核销时间段偏好(近180天成交)",
+	"label_code": "life_prefer_verify_time_span",
+	"label_id": 3865,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "生服综合核销时间段偏好(近180天成交)",
+	"label_code": "life_prefer_zh_verify_time_span",
+	"label_id": 3870,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "用户近180天高心智核销订单商品对应的三级类目",
+	"label_code": "high_value_trade_3rd_prd_categ_list_180d",
+	"label_id": 4034,
+	"enum_values": []
+}, {
+	"label_name": "用户近180天高心智核销订单商家对应的行业",
+	"label_code": "high_value_trade_l1_industry_list_180d",
+	"label_id": 4035,
+	"enum_values": []
+}, {
+	"label_name": "抖音用户活跃度分层",
+	"label_code": "user_activeness",
+	"label_id": 2786,
+	"enum_values": [{
+		"enum_name": "未知",
+		"enum_id": "-1"
+	}, {
+		"enum_name": "低活跃",
+		"enum_id": "1"
+	}, {
+		"enum_name": "中低活跃",
+		"enum_id": "2"
+	}, {
+		"enum_name": "中高活跃",
+		"enum_id": "3"
+	}, {
+		"enum_name": "高活跃",
+		"enum_id": "4"
+	}]
+}, {
+	"label_name": "视频带货力等级(内部)",
+	"label_code": "item_trade_level",
+	"label_id": 3403,
+	"enum_values": [{
+		"enum_name": "Lv0",
+		"enum_id": "Lv0"
+	}, {
+		"enum_name": "Lv1",
+		"enum_id": "Lv1"
+	}, {
+		"enum_name": "Lv2",
+		"enum_id": "Lv2"
+	}, {
+		"enum_name": "Lv3",
+		"enum_id": "Lv3"
+	}, {
+		"enum_name": "Lv4",
+		"enum_id": "Lv4"
+	}, {
+		"enum_name": "Lv5",
+		"enum_id": "Lv5"
+	}, {
+		"enum_name": "Lv6",
+		"enum_id": "Lv6"
+	}, {
+		"enum_name": "Lv7",
+		"enum_id": "Lv7"
+	}, {
+		"enum_name": "Lv8",
+		"enum_id": "Lv8"
+	}]
+}, {
+	"label_name": "生服核销力",
+	"label_code": "life_public_verify_ablitiy",
+	"label_id": 3850,
+	"enum_values": [{
+		"enum_name": "高",
+		"enum_id": "高"
+	}, {
+		"enum_name": "中",
+		"enum_id": "中"
+	}, {
+		"enum_name": "低",
+		"enum_id": "低"
+	}]
+}, {
+	"label_name": "生服用户线上消费力(L等级，窄口径)",
+	"label_code": "consumption_level_online_five",
+	"label_id": 3853,
+	"enum_values": [{
+		"enum_name": "L1",
+		"enum_id": "1"
+	}, {
+		"enum_name": "L2",
+		"enum_id": "2"
+	}, {
+		"enum_name": "L3",
+		"enum_id": "3"
+	}, {
+		"enum_name": "L4",
+		"enum_id": "4"
+	}, {
+		"enum_name": "L5",
+		"enum_id": "5"
+	}]
+}, {
+	"label_name": "生服用户线上+线下消费力(L等级，宽口径)",
+	"label_code": "consumption_level_offline_four",
+	"label_id": 3854,
+	"enum_values": [{
+		"enum_name": "L1",
+		"enum_id": "1"
+	}, {
+		"enum_name": "L2",
+		"enum_id": "2"
+	}, {
+		"enum_name": "L3",
+		"enum_id": "3"
+	}, {
+		"enum_name": "L4",
+		"enum_id": "4"
+	}]
+}, {
+	"label_name": "生服用户价值分层(R等级)",
+	"label_code": "life_user_high_value_level",
+	"label_id": 3858,
+	"enum_values": [{
+		"enum_name": "R0",
+		"enum_id": "R0"
+	}, {
+		"enum_name": "R1",
+		"enum_id": "R1"
+	}, {
+		"enum_name": "R2",
+		"enum_id": "R2"
+	}, {
+		"enum_name": "R3",
+		"enum_id": "R3"
+	}, {
+		"enum_name": "R4",
+		"enum_id": "R4"
+	}]
+}, {
+	"label_name": "生服用户线上+线下消费力(L等级，窄口径)",
+	"label_code": "consumption_level_offline_five",
+	"label_id": 3859,
+	"enum_values": [{
+		"enum_name": "L1",
+		"enum_id": "1"
+	}, {
+		"enum_name": "L2",
+		"enum_id": "2"
+	}, {
+		"enum_name": "L3",
+		"enum_id": "3"
+	}, {
+		"enum_name": "L4",
+		"enum_id": "4"
+	}, {
+		"enum_name": "L5",
+		"enum_id": "5"
+	}]
+}, {
+	"label_name": "生服用户生命周期（战略口径）",
+	"label_code": "user_lifecycle_before_new",
+	"label_id": 3860,
+	"enum_values": [{
+		"enum_name": "流失期",
+		"enum_id": "流失期"
+	}, {
+		"enum_name": "成长期",
+		"enum_id": "成长期"
+	}, {
+		"enum_name": "成熟期",
+		"enum_id": "成熟期"
+	}, {
+		"enum_name": "新客",
+		"enum_id": "新客"
+	}, {
+		"enum_name": "沉睡期",
+		"enum_id": "沉睡期"
+	}]
+}, {
+	"label_name": "生服老客优惠敏感度(用增口径)",
+	"label_code": "life_discount_prefer_layer",
+	"label_id": 3862,
+	"enum_values": [{
+		"enum_name": "高",
+		"enum_id": "高"
+	}, {
+		"enum_name": "中高",
+		"enum_id": "中高"
+	}, {
+		"enum_name": "低",
+		"enum_id": "低"
+	}, {
+		"enum_name": "未知",
+		"enum_id": "未知"
+	}, {
+		"enum_name": "中低",
+		"enum_id": "中低"
+	}]
+}, {
+	"label_name": "生服老客价格敏感度(用增口径)",
+	"label_code": "life_price_prefer_layer",
+	"label_id": 3863,
+	"enum_values": [{
+		"enum_name": "高",
+		"enum_id": "高"
+	}, {
+		"enum_name": "中高",
+		"enum_id": "中高"
+	}, {
+		"enum_name": "低",
+		"enum_id": "低"
+	}, {
+		"enum_name": "未知",
+		"enum_id": "未知"
+	}, {
+		"enum_name": "中低",
+		"enum_id": "中低"
+	}]
+}, {
+	"label_name": "生服用户线上消费力(L等级，宽口径)",
+	"label_code": "consumption_level_online_four",
+	"label_id": 3866,
+	"enum_values": [{
+		"enum_name": "L1",
+		"enum_id": "1"
+	}, {
+		"enum_name": "L2",
+		"enum_id": "2"
+	}, {
+		"enum_name": "L3",
+		"enum_id": "3"
+	}, {
+		"enum_name": "L4",
+		"enum_id": "4"
+	}]
+}, {
+	"label_name": "生服用户RFM分层（战略口径）",
+	"label_code": "rfm_user_type_new",
+	"label_id": 3871,
+	"enum_values": [{
+		"enum_name": "重要挽留客户",
+		"enum_id": "重要挽留客户"
+	}, {
+		"enum_name": "重要价值客户",
+		"enum_id": "重要价值客户"
+	}, {
+		"enum_name": "重要保持客户",
+		"enum_id": "重要保持客户"
+	}, {
+		"enum_name": "一般价值客户",
+		"enum_id": "一般价值客户"
+	}, {
+		"enum_name": "一般挽留客户",
+		"enum_id": "一般挽留客户"
+	}, {
+		"enum_name": "重要发展客户",
+		"enum_id": "重要发展客户"
+	}, {
+		"enum_name": "一般保持客户",
+		"enum_id": "一般保持客户"
+	}, {
+		"enum_name": "一般发展客户",
+		"enum_id": "一般发展客户"
+	}]
+}, {
+	"label_name": "生活服务五大人群",
+	"label_code": "life_five_user_group",
+	"label_id": 4080,
+	"enum_values": [{
+		"enum_name": "乐活情侣",
+		"enum_id": "乐活情侣"
+	}, {
+		"enum_name": "活力银发",
+		"enum_id": "活力银发"
+	}, {
+		"enum_name": "新生时代",
+		"enum_id": "新生时代"
+	}, {
+		"enum_name": "享乐单身",
+		"enum_id": "享乐单身"
+	}, {
+		"enum_name": "亲子家庭",
+		"enum_id": "亲子家庭"
+	}, {
+		"enum_name": "未知",
+		"enum_id": "未知"
+	}]
+}, {
+	"label_name": "是否为评价新人",
+	"label_code": "is_comment_new_user",
+	"label_id": 2782,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "是否历史写过评价",
+	"label_code": "is_write_comment",
+	"label_id": 2959,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "用户评价等级",
+	"label_code": "user_comment_level",
+	"label_id": 2960,
+	"enum_values": [{
+		"enum_name": "lv0",
+		"enum_id": "lv0"
+	}, {
+		"enum_name": "lv1",
+		"enum_id": "lv1"
+	}, {
+		"enum_name": "lv2",
+		"enum_id": "lv2"
+	}, {
+		"enum_name": "lv3",
+		"enum_id": "lv3"
+	}, {
+		"enum_name": "lv4",
+		"enum_id": "lv4"
+	}, {
+		"enum_name": "lv5",
+		"enum_id": "lv5"
+	}, {
+		"enum_name": "lv6",
+		"enum_id": "lv6"
+	}, {
+		"enum_name": "lv7",
+		"enum_id": "lv7"
+	}, {
+		"enum_name": "lv8",
+		"enum_id": "lv8"
+	}]
+}, {
+	"label_name": "最近一次有效访问团购tab距今天数",
+	"label_code": "last_valid_visit_gp_to_today_day_cnt",
+	"label_id": 2777,
+	"enum_values": []
+}, {
+	"label_name": "是否访问过团购tab",
+	"label_code": "is_visit_gp",
+	"label_id": 2788,
+	"enum_values": [{
+		"enum_name": "否",
+		"enum_id": "0"
+	}, {
+		"enum_name": "是",
+		"enum_id": "1"
+	}]
+}, {
+	"label_name": "生服消费二级品类偏好",
+	"label_code": "life_prefer_l2_industry",
+	"label_id": 3851,
+	"enum_values": [{
+		"enum_name": "其他",
+		"enum_id": "其他"
+	}, {
+		"enum_name": "旅行社",
+		"enum_id": "旅行社"
+	}, {
+		"enum_name": "丽人",
+		"enum_id": "丽人"
+	}, {
+		"enum_name": "休闲娱乐",
+		"enum_id": "休闲娱乐"
+	}, {
+		"enum_name": "正餐",
+		"enum_id": "正餐"
+	}, {
+		"enum_name": "进场零售",
+		"enum_id": "进场零售"
+	}, {
+		"enum_name": "酒店",
+		"enum_id": "酒店"
+	}, {
+		"enum_name": "LE",
+		"enum_id": "LE"
+	}, {
+		"enum_name": "大交通",
+		"enum_id": "大交通"
+	}, {
+		"enum_name": "轻餐",
+		"enum_id": "轻餐"
+	}, {
+		"enum_name": "景区游玩",
+		"enum_id": "景区游玩"
+	}]
+}, {
+	"label_name": "生服餐饮支付时间段偏好",
+	"label_code": "life_prefer_cy_pay_time_span",
+	"label_id": 3855,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "生服酒旅支付时间段偏好",
+	"label_code": "life_prefer_jv_pay_time_span",
+	"label_id": 3861,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "生服支付渠道偏好",
+	"label_code": "life_prefer_trade_channel",
+	"label_id": 3867,
+	"enum_values": [{
+		"enum_name": "其他",
+		"enum_id": "其他"
+	}, {
+		"enum_name": "视频推荐",
+		"enum_id": "视频推荐"
+	}, {
+		"enum_name": "直播推荐",
+		"enum_id": "直播推荐"
+	}, {
+		"enum_name": "电商商城",
+		"enum_id": "电商商城"
+	}, {
+		"enum_name": "线下扫码",
+		"enum_id": "线下扫码"
+	}, {
+		"enum_name": "团购tab",
+		"enum_id": "团购tab"
+	}, {
+		"enum_name": "独立卡",
+		"enum_id": "独立卡"
+	}, {
+		"enum_name": "同城tab",
+		"enum_id": "同城tab"
+	}, {
+		"enum_name": "搜索",
+		"enum_id": "搜索"
+	}]
+}, {
+	"label_name": "生服支付时间段偏好",
+	"label_code": "life_prefer_pay_time_span",
+	"label_id": 3868,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}, {
+	"label_name": "生服综合支付时间段偏好",
+	"label_code": "life_prefer_zh_pay_time_span",
+	"label_id": 3869,
+	"enum_values": [{
+		"enum_name": "14-17",
+		"enum_id": "14-17"
+	}, {
+		"enum_name": "22-5",
+		"enum_id": "22-5"
+	}, {
+		"enum_name": "6-9",
+		"enum_id": "6-9"
+	}, {
+		"enum_name": "18-21",
+		"enum_id": "18-21"
+	}, {
+		"enum_name": "10-13",
+		"enum_id": "10-13"
+	}]
+}],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
